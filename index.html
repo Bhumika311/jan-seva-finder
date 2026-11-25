@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Find Indian government schemes and public services using your profile.">
+<title>Jan Seva Finder | Government Schemes &amp; Services</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="catalog.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap top">
+<a class="brand" href="#" aria-label="Jan Seva Finder home"><span class="mark" data-icon="landmark"></span><span><strong>Jan Seva</strong><small>SCHEMES FINDER</small></span></a>
+<nav aria-label="Main navigation"><a href="#browse">Explore schemes</a><a href="#sources">Official sources</a></nav>
+<a class="top-help" href="#help"><span data-icon="phone"></span> <span>Get help</span></a>
+</div></header>
+<main id="main">
+<section class="hero">
+<div class="wrap hero-inner">
+<div class="hero-copy"><p class="eyebrow"><span class="flag" aria-hidden="true"></span> INDIA’S PUBLIC SCHEMES &amp; SERVICES</p>
+<h1>Find support<br>that fits <em>you.</em></h1>
+<p class="intro">Discover government benefits, essential services and practical help, all in one place.</p>
+<div class="hero-note"><span data-icon="shield"></span> Information from official government sources</div></div>
+<div class="hero-art" aria-hidden="true"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div><div class="center-art" data-icon="landmark"></div><div class="sat sat-1" data-icon="heart"></div><div class="sat sat-2" data-icon="education"></div><div class="sat sat-3" data-icon="wallet"></div><span class="spark one">✦</span><span class="spark two">✦</span></div>
+</div>
+</section>
+<div class="wrap content">
+<section class="profile" aria-labelledby="profile-title">
+<div class="profile-head"><div class="section-icon" data-icon="person"></div><div><h2 id="profile-title">Find schemes for me</h2><p>Enter your details to see which programmes may be relevant to you.</p></div><button type="button" class="text-button" id="reset-profile" hidden>Clear profile</button></div>
+<form id="profile-form">
+<label>State or UT<select name="state" required><option value="">Select state / UT</option></select></label>
+<label>District<input name="district" placeholder="Enter district" maxlength="80" required></label>
+<label>Gender<select name="gender" required><option value="">Select gender</option><option>Woman</option><option>Man</option><option>Other</option><option>Prefer not to say</option></select></label>
+<label>Age<input name="age" type="number" inputmode="numeric" min="0" max="120" placeholder="In years" required></label>
+<label>Occupation<select name="occupation" required><option value="">Select occupation</option><option>Student</option><option>Farmer</option><option>Artisan</option><option>Employed</option><option>Self-employed</option><option>Job seeker</option><option>Homemaker</option><option>Retired</option><option>Other</option></select></label>
+<button class="primary" type="submit"><span data-icon="search"></span> Find matches</button>
+</form>
+<p class="privacy"><span data-icon="lock"></span> Your profile stays on this page and is cleared when you reload.</p>
+</section>
+<section class="browse" id="browse" aria-labelledby="browse-title">
+<div class="browse-head"><div><p class="eyebrow ink">SCHEME DIRECTORY</p><h2 id="browse-title">Explore schemes &amp; services</h2><p id="browse-description">Browse programmes by category or search for what you need.</p></div>
+<div class="search"><span data-icon="search"></span><input type="search" id="search" aria-label="Search schemes and services" placeholder="Search schemes, benefits or services"></div></div>
+<div class="filters" id="filters" aria-label="Filter by category"></div>
+<div class="status-row"><p id="result-status" role="status"></p><label id="match-control" hidden><input id="matches" type="checkbox"> Show profile matches only</label></div>
+<div class="cards" id="cards"></div>
+</section>
+<section id="help" class="help"><div class="section-icon" data-icon="phone"></div><div><h2>Need help now?</h2><p>Contact the appropriate support service directly.</p></div><div class="help-links"><a href="tel:112">Emergency <strong>112</strong></a><a href="tel:181">Women’s helpline <strong>181</strong></a><a href="tel:1930">Financial cyber fraud <strong>1930</strong></a></div></section>
+</div>
+</main>
+<footer id="sources"><div class="wrap foot"><div><strong>Jan Seva Finder</strong><p>Independent guide to selected Indian government programmes. The administering authority confirms eligibility and availability.</p></div><div class="source-links"><a href="https://www.myscheme.gov.in/">myScheme</a><a href="https://www.india.gov.in/">National Portal of India</a><a href="https://www.cybercrime.gov.in/">Cyber Crime Portal</a></div></div></footer>
+<dialog id="detail" aria-labelledby="detail-title"><div class="dialog-inner"><form method="dialog"><button class="close" aria-label="Close scheme details">×</button></form><div id="detail-content"></div></div></dialog>
+</body>
+</html>
